@@ -43,18 +43,31 @@
 - [x] UI に Agent モード追加
 
 ## Phase 5: 評価と仕上げ (`feature/phase5-eval`)
-- [ ] 正常・違反・タイムアウト・vLLM 停止の pytest
-- [ ] 評価スクリプト（証明成功、応答時間、ツール選択成功率、VRAM）
+- [x] 正常・違反・タイムアウト・vLLM 停止の pytest
+- [x] 評価スクリプト（証明成功、応答時間、ツール選択成功率、VRAM）
 - [x] vLLM + Qwen3-1.7B を A1000 で実機確認
-- [ ] `uv run pytest` 全成功 / Lean 全サンプル検証成功
+- [x] `uv run pytest` 全成功 / Lean 全サンプル検証成功
+
+## デモ資料 (`feature/demo-docs`)
+- [x] Playwright による自動録画スクリプト（`scripts/record_demo.py`）
+- [x] デモ動画（MP4）と GIF
+- [x] デモ詳細ドキュメント（`docs/demo.md`）
+- [x] README 先頭に GIF を掲載
 
 ## 受け入れ条件
-- [ ] Streamlit の3デモが動作する
-- [ ] vLLM + 小型 Qwen が RTX A1000 8GB で実行できる
-- [ ] 3デモすべてに自作 Lean 4 の検証がある
-- [ ] Qwen 停止時も UI から Lean 単体検証を実行できる
-- [ ] RBAC 編集結果と最適化の具体解が Lean 検証入力に反映される
-- [ ] 違反・証明失敗・実行エラー・タイムアウトを区別する
-- [ ] LLM の生成テキストを無制限に実行しない
-- [ ] 正常・違反・異常のテストがある
-- [ ] README に環境構築・起動・使用方法を記載
+- [x] Streamlit の3デモが動作する
+- [x] vLLM + 小型 Qwen が RTX A1000 8GB で実行できる
+- [x] 3デモすべてに自作 Lean 4 の検証がある
+- [x] Qwen 停止時も UI から Lean 単体検証を実行できる
+- [x] RBAC 編集結果と最適化の具体解が Lean 検証入力に反映される
+- [x] 違反・証明失敗・実行エラー・タイムアウトを区別する
+- [x] LLM の生成テキストを無制限に実行しない
+- [x] 正常・違反・異常のテストがある
+- [x] README に環境構築・起動・使用方法を記載
+
+## 既知の課題（GitHub Issues）
+- [ ] #2 INFEASIBLE を Lean で証明
+- [ ] #3 Demo 1 の Int モデル化（設計書との差分の確認）
+- [x] #6 vLLM が nvcc 不在で起動失敗（回避済み）
+- [ ] #7 Tool Calling モードの引数誤抽出
+- [ ] #8 説明文と判定の矛盾（ヒューリスティックで緩和）

@@ -19,8 +19,8 @@ from src.verification.results import Status, VerificationResult
 
 TOOL_DESCRIPTIONS = {
     "verify_transfer": "送金（残高 balance, 送金額 amount）が安全かを Lean で検証する",
-    "verify_rbac": "RBAC 権限表の変更 changes を現在のポリシーに適用し、禁止ルールを Lean で検証する",
-    "optimize_staffing": "需要・稼働上限の変更を適用して人員配置を最適化し、解の制約充足を Lean で検証する",
+    "verify_rbac": "RBAC 権限表の変更 changes を現在のポリシーに適用し、禁止ルールを Lean で検証する（changes が空なら現在のポリシーを検証）",
+    "optimize_staffing": "案件の必要時間 demand_changes・社員の稼働上限 capacity_changes の変更を適用して人員配置を最適化し、解の制約充足を Lean で検証する",
     "verify_staffing": "社員×案件の配置行列 hours が制約を満たすかを Lean で検証する",
     "none": "検証ツールで扱えない要求の場合に理由を返す",
 }
