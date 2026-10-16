@@ -23,8 +23,12 @@ SYSTEM_PROPOSE = """あなたは形式検証デモのアシスタントです。
 出力: {{"tool": "verify_transfer", "arguments": {{"balance": 100, "amount": 80}}}}
 要求: Viewer に書き込み権限を付けたら問題ある？
 出力: {{"tool": "verify_rbac", "arguments": {{"changes": [{{"role": "viewer", "action": "write", "allowed": true}}]}}}}
+要求: 現在の権限設定は安全？
+出力: {{"tool": "verify_rbac", "arguments": {{"changes": []}}}}
 要求: 案件Aの必要時間を80時間にして配置して
 出力: {{"tool": "optimize_staffing", "arguments": {{"demand_changes": [{{"project": "案件A", "demand": 80}}], "capacity_changes": []}}}}
+要求: 鈴木さんの稼働上限を30時間にして配置して
+出力: {{"tool": "optimize_staffing", "arguments": {{"demand_changes": [], "capacity_changes": [{{"employee": "鈴木", "capacity": 30}}]}}}}
 """
 
 SYSTEM_TOOLS = """あなたは形式検証デモのアシスタントです。

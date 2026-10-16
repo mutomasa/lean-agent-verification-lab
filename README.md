@@ -71,4 +71,7 @@ vLLM が停止していてもタブ 1〜3（Lean 単体デモ）は動作する�
 ```bash
 uv run pytest            # 単体 + Lean 結合 + UI（vLLM 不要）
 uv run pytest -m vllm    # 起動中の vLLM を使う実機テスト
+uv run python -m scripts.evaluate   # 評価（Lean 全サンプル + Agent 成功率 + 応答時間 + VRAM）
 ```
+
+評価結果は [`docs/evaluation.md`](docs/evaluation.md)。
