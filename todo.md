@@ -4,26 +4,26 @@
 運用: 機能ごとにブランチ → PR → マージ。問題点は GitHub Issues に記録する。
 
 ## Phase 0: 開発基盤
-- [ ] git 初期化・GitHub リポジトリ作成
-- [ ] todo.md / CLAUDE.md / .gitignore
+- [x] git 初期化・GitHub リポジトリ作成
+- [x] todo.md / CLAUDE.md / .gitignore
 
 ## Phase 1: リポジトリと環境 (`feature/phase1-setup`)
-- [ ] uv プロジェクト作成（streamlit, openai, ortools, pytest）
-- [ ] Lean 4 プロジェクト作成（lean-toolchain, lakefile.toml）
-- [ ] `lake env lean` の動作確認
-- [ ] README（インストール、GPU要件、2プロセス起動）
-- [ ] `.env.example` / `config/settings.py`
+- [x] uv プロジェクト作成（streamlit, openai, ortools, pytest）
+- [x] Lean 4 プロジェクト作成（lean-toolchain, lakefile.toml）
+- [x] `lake env lean` の動作確認
+- [x] README（インストール、GPU要件、2プロセス起動）
+- [x] `.env.example` / `config/settings.py`
 
 ## Phase 2: Lean 4 単体の検証 (`feature/phase2-lean`)
-- [ ] `Status` / `VerificationResult`（results.py）
-- [ ] 安全な Lean ランナー（shell=False, timeout, 作業ディレクトリ限定）
-- [ ] 出力分類（PASS / VIOLATION / PROOF_FAILED / ERROR / TIMEOUT）
-- [ ] `sorry` / `admit` / `axiom` 検出
-- [ ] `Demo/Coding.lean`（送金）
-- [ ] `Demo/Security.lean`（RBAC）
-- [ ] `Demo/Optimization.lean`（配賦制約）
-- [ ] source_builder（型付きデータ → Lean ソース）
-- [ ] 正常・違反・異常の固定ケーステスト
+- [x] `Status` / `VerificationResult`（results.py）
+- [x] 安全な Lean ランナー（shell=False, timeout, 作業ディレクトリ限定）
+- [x] 出力分類（PASS / VIOLATION / PROOF_FAILED / ERROR / TIMEOUT）
+- [x] `sorry` / `admit` / `axiom` 検出
+- [x] `Demo/Coding.lean`（送金）
+- [x] `Demo/Security.lean`（RBAC）
+- [x] `Demo/Optimization.lean`（配賦制約）
+- [x] source_builder（型付きデータ → Lean ソース）
+- [x] 正常・違反・異常の固定ケーステスト
 
 ## Phase 3: ドメインサービス + Streamlit 3タブ (`feature/phase3-ui`)
 - [ ] demos/coding.py
