@@ -34,18 +34,18 @@
 - [x] 入力変更で検証対象が変わる結合テスト
 
 ## Phase 4: vLLM + Qwen Agent (`feature/phase4-agent`)
-- [ ] 接続設定の環境変数化
-- [ ] schemas.py（ツール引数の JSON スキーマ検証）
-- [ ] tools.py（allowlist ツール）
-- [ ] client.py（OpenAI 互換クライアント）
-- [ ] orchestrator.py（再試行・エラー表示）
-- [ ] vLLM 停止時でも Lean 単体デモが動く
-- [ ] UI に Agent モード追加
+- [x] 接続設定の環境変数化
+- [x] schemas.py（ツール引数の JSON スキーマ検証）
+- [x] tools.py（allowlist ツール）
+- [x] client.py（OpenAI 互換クライアント）
+- [x] orchestrator.py（再試行・エラー表示）
+- [x] vLLM 停止時でも Lean 単体デモが動く
+- [x] UI に Agent モード追加
 
 ## Phase 5: 評価と仕上げ (`feature/phase5-eval`)
 - [ ] 正常・違反・タイムアウト・vLLM 停止の pytest
 - [ ] 評価スクリプト（証明成功、応答時間、ツール選択成功率、VRAM）
-- [ ] vLLM + Qwen3-1.7B を A1000 で実機確認
+- [x] vLLM + Qwen3-1.7B を A1000 で実機確認
 - [ ] `uv run pytest` 全成功 / Lean 全サンプル検証成功
 
 ## 受け入れ条件
