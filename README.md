@@ -1,5 +1,10 @@
 # Lean Agent Verification Lab
 
+![demo](docs/demo/demo.gif)
+
+> 送金・RBAC・人員配置の 3 デモと AI Agent を、Lean 4 で検証する様子（1.5 倍速）。
+> 等速の動画は [`docs/demo/demo.mp4`](docs/demo/demo.mp4)、各画面の詳しい説明は **[docs/demo.md](docs/demo.md)**。
+
 ローカル GPU 上の **vLLM + Qwen3-1.7B** を使う AI Agent と、手書きの **Lean 4** 形式検証を組み合わせた 3 つの検証デモ（Streamlit）。
 
 | Demo | 内容 | Lean で検証すること |
