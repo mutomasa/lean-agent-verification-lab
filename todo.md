@@ -26,12 +26,12 @@
 - [x] 正常・違反・異常の固定ケーステスト
 
 ## Phase 3: ドメインサービス + Streamlit 3タブ (`feature/phase3-ui`)
-- [ ] demos/coding.py
-- [ ] demos/security.py（9組列挙＋Lean検証）
-- [ ] optimization/staffing.py（CP-SAT, INFEASIBLE）
-- [ ] demos/optimization.py
-- [ ] app.py 3タブ UI
-- [ ] 入力変更で検証対象が変わる結合テスト
+- [x] demos/coding.py
+- [x] demos/security.py（9組列挙＋Lean検証）
+- [x] optimization/staffing.py（CP-SAT, INFEASIBLE）
+- [x] demos/optimization.py
+- [x] app.py 3タブ UI
+- [x] 入力変更で検証対象が変わる結合テスト
 
 ## Phase 4: vLLM + Qwen Agent (`feature/phase4-agent`)
 - [ ] 接続設定の環境変数化

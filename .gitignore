@@ -7,3 +7,4 @@ lean/.lake/
 lean/build/
 .lean_work/
 results/
+.playwright-mcp/
