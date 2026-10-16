@@ -48,6 +48,12 @@
 - [x] vLLM + Qwen3-1.7B を A1000 で実機確認
 - [x] `uv run pytest` 全成功 / Lean 全サンプル検証成功
 
+## デモ資料 (`feature/demo-docs`)
+- [x] Playwright による自動録画スクリプト（`scripts/record_demo.py`）
+- [x] デモ動画（MP4）と GIF
+- [x] デモ詳細ドキュメント（`docs/demo.md`）
+- [x] README 先頭に GIF を掲載
+
 ## 受け入れ条件
 - [x] Streamlit の3デモが動作する
 - [x] vLLM + 小型 Qwen が RTX A1000 8GB で実行できる
