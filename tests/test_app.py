@@ -7,7 +7,9 @@ pytestmark = pytest.mark.lean
 
 
 @pytest.fixture
-def app(lean_runner):
+def app(lean_runner, monkeypatch):
+    monkeypatch.setenv("VLLM_BASE_URL", "http://127.0.0.1:9/v1")
+    monkeypatch.setenv("VLLM_TIMEOUT_SEC", "1")
     at = AppTest.from_file("../app.py", default_timeout=120)
     at.run()
     assert not at.exception
@@ -18,8 +20,16 @@ def _button(at, key):
     return next(b for b in at.button if b.key == key)
 
 
-def test_three_tabs(app):
-    assert len(app.tabs) == 3
+def test_four_tabs(app):
+    assert len(app.tabs) == 4
+
+
+def test_lean_demos_work_when_vllm_is_down(app, monkeypatch):
+    # vLLM を停止した状態（存在しないポート）でも Lean 単体デモは動く
+    _button(app, "rbac_verify").click()
+    app.run()
+    assert not app.exception
+    assert app.session_state["rbac_result"].status.value == "PASS"
 
 
 def test_coding_violation_via_ui(app):
