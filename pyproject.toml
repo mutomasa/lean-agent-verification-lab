@@ -1,0 +1,26 @@
+[project]
+name = "lean-agent-verification-lab"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "jsonschema>=4.26.0",
+    "openai>=3.31.0",
+    "ortools>=9.15.6755",
+    "pandas>=3.0.6",
+    "python-dotenv>=1.2.4",
+    "streamlit>=1.66.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+markers = [
+    "lean: Lean ツールチェーンを実際に呼び出すテスト",
+    "vllm: 起動中の vLLM サーバーが必要なテスト",
+]
+addopts = "-m 'not vllm'"

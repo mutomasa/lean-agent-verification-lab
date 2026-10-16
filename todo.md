@@ -4,8 +4,8 @@
 運用: 機能ごとにブランチ → PR → マージ。問題点は GitHub Issues に記録する。
 
 ## Phase 0: 開発基盤
-- [ ] git 初期化・GitHub リポジトリ作成
-- [ ] todo.md / CLAUDE.md / .gitignore
+- [x] git 初期化・GitHub リポジトリ作成
+- [x] todo.md / CLAUDE.md / .gitignore
 
 ## Phase 1: リポジトリと環境 (`feature/phase1-setup`)
 - [ ] uv プロジェクト作成（streamlit, openai, ortools, pytest）
