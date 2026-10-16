@@ -15,15 +15,15 @@
 - [x] `.env.example` / `config/settings.py`
 
 ## Phase 2: Lean 4 単体の検証 (`feature/phase2-lean`)
-- [ ] `Status` / `VerificationResult`（results.py）
-- [ ] 安全な Lean ランナー（shell=False, timeout, 作業ディレクトリ限定）
-- [ ] 出力分類（PASS / VIOLATION / PROOF_FAILED / ERROR / TIMEOUT）
-- [ ] `sorry` / `admit` / `axiom` 検出
-- [ ] `Demo/Coding.lean`（送金）
-- [ ] `Demo/Security.lean`（RBAC）
-- [ ] `Demo/Optimization.lean`（配賦制約）
-- [ ] source_builder（型付きデータ → Lean ソース）
-- [ ] 正常・違反・異常の固定ケーステスト
+- [x] `Status` / `VerificationResult`（results.py）
+- [x] 安全な Lean ランナー（shell=False, timeout, 作業ディレクトリ限定）
+- [x] 出力分類（PASS / VIOLATION / PROOF_FAILED / ERROR / TIMEOUT）
+- [x] `sorry` / `admit` / `axiom` 検出
+- [x] `Demo/Coding.lean`（送金）
+- [x] `Demo/Security.lean`（RBAC）
+- [x] `Demo/Optimization.lean`（配賦制約）
+- [x] source_builder（型付きデータ → Lean ソース）
+- [x] 正常・違反・異常の固定ケーステスト
 
 ## Phase 3: ドメインサービス + Streamlit 3タブ (`feature/phase3-ui`)
 - [ ] demos/coding.py
