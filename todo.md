@@ -8,11 +8,11 @@
 - [x] todo.md / CLAUDE.md / .gitignore
 
 ## Phase 1: リポジトリと環境 (`feature/phase1-setup`)
-- [ ] uv プロジェクト作成（streamlit, openai, ortools, pytest）
-- [ ] Lean 4 プロジェクト作成（lean-toolchain, lakefile.toml）
-- [ ] `lake env lean` の動作確認
-- [ ] README（インストール、GPU要件、2プロセス起動）
-- [ ] `.env.example` / `config/settings.py`
+- [x] uv プロジェクト作成（streamlit, openai, ortools, pytest）
+- [x] Lean 4 プロジェクト作成（lean-toolchain, lakefile.toml）
+- [x] `lake env lean` の動作確認
+- [x] README（インストール、GPU要件、2プロセス起動）
+- [x] `.env.example` / `config/settings.py`
 
 ## Phase 2: Lean 4 単体の検証 (`feature/phase2-lean`)
 - [ ] `Status` / `VerificationResult`（results.py）
