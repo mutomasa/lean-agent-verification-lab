@@ -26,35 +26,48 @@
 - [x] 正常・違反・異常の固定ケーステスト
 
 ## Phase 3: ドメインサービス + Streamlit 3タブ (`feature/phase3-ui`)
-- [ ] demos/coding.py
-- [ ] demos/security.py（9組列挙＋Lean検証）
-- [ ] optimization/staffing.py（CP-SAT, INFEASIBLE）
-- [ ] demos/optimization.py
-- [ ] app.py 3タブ UI
-- [ ] 入力変更で検証対象が変わる結合テスト
+- [x] demos/coding.py
+- [x] demos/security.py（9組列挙＋Lean検証）
+- [x] optimization/staffing.py（CP-SAT, INFEASIBLE）
+- [x] demos/optimization.py
+- [x] app.py 3タブ UI
+- [x] 入力変更で検証対象が変わる結合テスト
 
 ## Phase 4: vLLM + Qwen Agent (`feature/phase4-agent`)
-- [ ] 接続設定の環境変数化
-- [ ] schemas.py（ツール引数の JSON スキーマ検証）
-- [ ] tools.py（allowlist ツール）
-- [ ] client.py（OpenAI 互換クライアント）
-- [ ] orchestrator.py（再試行・エラー表示）
-- [ ] vLLM 停止時でも Lean 単体デモが動く
-- [ ] UI に Agent モード追加
+- [x] 接続設定の環境変数化
+- [x] schemas.py（ツール引数の JSON スキーマ検証）
+- [x] tools.py（allowlist ツール）
+- [x] client.py（OpenAI 互換クライアント）
+- [x] orchestrator.py（再試行・エラー表示）
+- [x] vLLM 停止時でも Lean 単体デモが動く
+- [x] UI に Agent モード追加
 
 ## Phase 5: 評価と仕上げ (`feature/phase5-eval`)
-- [ ] 正常・違反・タイムアウト・vLLM 停止の pytest
-- [ ] 評価スクリプト（証明成功、応答時間、ツール選択成功率、VRAM）
-- [ ] vLLM + Qwen3-1.7B を A1000 で実機確認
-- [ ] `uv run pytest` 全成功 / Lean 全サンプル検証成功
+- [x] 正常・違反・タイムアウト・vLLM 停止の pytest
+- [x] 評価スクリプト（証明成功、応答時間、ツール選択成功率、VRAM）
+- [x] vLLM + Qwen3-1.7B を A1000 で実機確認
+- [x] `uv run pytest` 全成功 / Lean 全サンプル検証成功
+
+## デモ資料 (`feature/demo-docs`)
+- [x] Playwright による自動録画スクリプト（`scripts/record_demo.py`）
+- [x] デモ動画（MP4）と GIF
+- [x] デモ詳細ドキュメント（`docs/demo.md`）
+- [x] README 先頭に GIF を掲載
 
 ## 受け入れ条件
-- [ ] Streamlit の3デモが動作する
-- [ ] vLLM + 小型 Qwen が RTX A1000 8GB で実行できる
-- [ ] 3デモすべてに自作 Lean 4 の検証がある
-- [ ] Qwen 停止時も UI から Lean 単体検証を実行できる
-- [ ] RBAC 編集結果と最適化の具体解が Lean 検証入力に反映される
-- [ ] 違反・証明失敗・実行エラー・タイムアウトを区別する
-- [ ] LLM の生成テキストを無制限に実行しない
-- [ ] 正常・違反・異常のテストがある
-- [ ] README に環境構築・起動・使用方法を記載
+- [x] Streamlit の3デモが動作する
+- [x] vLLM + 小型 Qwen が RTX A1000 8GB で実行できる
+- [x] 3デモすべてに自作 Lean 4 の検証がある
+- [x] Qwen 停止時も UI から Lean 単体検証を実行できる
+- [x] RBAC 編集結果と最適化の具体解が Lean 検証入力に反映される
+- [x] 違反・証明失敗・実行エラー・タイムアウトを区別する
+- [x] LLM の生成テキストを無制限に実行しない
+- [x] 正常・違反・異常のテストがある
+- [x] README に環境構築・起動・使用方法を記載
+
+## 既知の課題（GitHub Issues）
+- [ ] #2 INFEASIBLE を Lean で証明
+- [ ] #3 Demo 1 の Int モデル化（設計書との差分の確認）
+- [x] #6 vLLM が nvcc 不在で起動失敗（回避済み）
+- [ ] #7 Tool Calling モードの引数誤抽出
+- [ ] #8 説明文と判定の矛盾（ヒューリスティックで緩和）

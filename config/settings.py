@@ -32,6 +32,8 @@ class LLMSettings:
     model: str
     timeout_sec: int
     max_retries: int
+    tool_mode: str = "json"
+    guided_json: bool = True
 
 
 @dataclass(frozen=True)
@@ -59,6 +61,8 @@ def _load_llm() -> LLMSettings:
         model=_env_str("VLLM_MODEL", "Qwen/Qwen3-1.7B"),
         timeout_sec=_env_int("VLLM_TIMEOUT_SEC", 30),
         max_retries=_env_int("AGENT_MAX_RETRIES", 2),
+        tool_mode=_env_str("AGENT_TOOL_MODE", "json"),
+        guided_json=_env_str("VLLM_GUIDED_JSON", "1") == "1",
     )
 
 

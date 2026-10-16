@@ -1,0 +1,6 @@
+[project]
+name = "lean-lab-vllm-server"
+version = "0.1.0"
+description = "vLLM 推論サーバー用の独立 uv 環境（アプリ本体と CUDA/PyTorch 依存を分離）"
+requires-python = ">=3.12,<3.13"
+dependencies = ["vllm"]
